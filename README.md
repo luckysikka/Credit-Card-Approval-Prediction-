@@ -31,18 +31,6 @@ Another advantage of using decision trees is that the amount of data cleansing t
 The accuracy for this algorithm is 69.60%, highest for 70:30 (training: test) ratio. However, accuracy is not the only indicator for evaluating the model, there are other parameters such as specificity and sensitivity, which determine the best model. The confusion matrix for the best model in C5 depicts, 3195 customers are predicted to be good customers, however, they are bad customers and would default on payment. Also, we are missing out on 130 good customers which the model predicted as bad.
 
 
-Figure 9: C5: Confusion Matrix (70:30)
-
-
-
-Figure 10: C5: Confusion Matrix (80:20)
-
-
-Figure 11: C5: Confusion Matrix (90:10)
-
-Table 3: Performance metric for C5
-
-
 
 Training: Test data
 Accuracy
@@ -68,26 +56,10 @@ When using the Random Forest method, determining the relative relevance of each 
 The highest accuracy for this model is 71.34% for 90:10 (training: test) split with a sensitivity of 100%. The confusion matrix for the best model in Random forest depicts, 1045 customers are predicted to be good customers, however, they are bad customers and would default on payment. However, in this model, we are not missing out on any good customers.
 
 
-70:30
-
-Figure 12:
-
-	
-	
-	Figure 13: Random Forest: Confusion Matrix (70:30)
-
-	80:20
-
-Figure 14: Randon forest OOB graph 
-
-		
-Figure 15: Random Forest: Confusion Matrix (80:20)
 
 90:10
 
-Figure 16: Random forest OOB graph
 
-Figure 17: Random Forest: Confusion Matrix (90:10)
 
 Table 4: Performance metric for Random Forest
 Training: Test data
@@ -112,20 +84,6 @@ Naïve Bayes
 The Naive Bayes algorithm is one of the most common machine learning methods that makes use of Bayesian methods. It derives its name from its characteristic of making some "naive" assumptions about the data. Specifically, it treats all the features in the dataset independently and equally based on importance. Although not all features are crucial when applying in the real world, Naïve Bayes performs moderately well in most of the cases where the assumptions are breached. Naïve Bayes is however usually a first choice for consideration for classification learning tasks due to its adaptability and accuracy across various scenarios.
 
 The highest accuracy for this model is 71.39% for 90:10 (training: test) ratio with a very high sensitivity. The confusion matrix for the best model in Naive Bayes depicts that 1039 customers are predicted to be good customers, however, they are bad customers and would default on payment. Here, we are missing out only on 4 good customers which the model predicted as bad.
-
-70:30  
-
-	
-			Figure 18:  Naive Bayes: Confusion Matrix (70:30)
-        80:20
-	
-	
-Figure 19: Naive Bayes: Confusion Matrix (80:20)
-90:10
-
-
-	
-Figure 20: Naive Bayes: Confusion Matrix (90:10)
 
 Table 5: Performance metric for Naïve Bayes
 Training: Test data
